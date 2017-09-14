@@ -4,7 +4,7 @@
 
 Reflection is a fieldtype for ExpressionEngine that provides site admins with a feature heavy code-editor.  The editor is powered by <a href='http://codemirror.net/'>Code Mirror</a> and features syntax specific highlighting and color themeing options.
 
-The plugin parses internal EE tags such as `{filedir_#` for images.
+The plugin parses internal EE tags such as `{filedir_#}` for images.
 
 ## Install
 
