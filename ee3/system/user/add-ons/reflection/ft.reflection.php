@@ -178,8 +178,13 @@ class Reflection_ft extends EE_Fieldtype {
 	 */
 	function replace_tag($data, $params = array(), $tagdata = FALSE)
 	{
-	  //must return the string to replace the tag
-	  return $data;
+
+		ee()->load->library('typography');
+		
+		ee()->typography->parse_images = TRUE;
+		
+		return ee()->typography->parse_file_paths($data);
+
 	}
 
 	/**
